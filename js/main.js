@@ -119,7 +119,7 @@ function calculateTimeDifference(targetDate) {
 }
 
 function updateTimeInterval() {
-  const targetDate = "2023-12-09T14:00:00Z"; // December 9, 2023, 2:00 PM
+  const targetDate = "2024-09-10T10:00:00Z"; // sep 10, 2024, 10:00 AM
   const { days, hours, minutes, seconds } = calculateTimeDifference(targetDate);
 
   document.getElementById("days").textContent = days;
