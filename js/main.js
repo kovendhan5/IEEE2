@@ -91,7 +91,7 @@
 /* ************* Coming soon...  *************** */
 function calculateTimeDifference(targetDate) {
   const targetDateTime = new Date(targetDate);
-  targetDateTime.setHours(14, 0, 0, 0); // Set the target time to 14:00:00
+  targetDateTime.setHours(10, 0, 0, 0); // Set the target time to 14:00:00
 
   const currentDate = new Date();
   const timeDifference = Math.abs(targetDateTime - currentDate);
