@@ -373,58 +373,98 @@ h6,
 }
 
 /*** Footer ***/
-.footer {
-  color: #7f8499;
+#co-ordinators {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #fff;
 }
 
-.footer .btn.btn-link {
-  display: block;
-  margin-bottom: 5px;
-  padding: 0;
-  text-align: left;
-  color: #7f8499;
-  font-weight: normal;
-  text-transform: capitalize;
-  transition: 0.3s;
+.container5, .container6, .container7 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.footer .btn.btn-link::before {
-  position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #7f8499;
-  margin-right: 10px;
+.co-ordinator {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.footer .btn.btn-link:hover {
-  color: var(--primary);
-  letter-spacing: 1px;
-  box-shadow: none;
+.h2-c {
+  font-size: 1.8rem;
+  color: #E22E38;
+  margin-bottom: 1rem;
 }
 
-.footer .btn.btn-square {
-  color: #7f8499;
-  border: 1px solid #ffffff;
+.h4-c {
+  font-size: 1.2rem;
+  color: #E22E38;
 }
 
-.footer .btn.btn-square:hover {
-  transform: scale(1.08);
+.h3-c {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #333;
 }
 
-.footer .copyright {
-  padding: 25px 0;
-  border-top: 1px solid rgba(256, 256, 256, 0.1);
+/* Contact */
+
+#Contact {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
-.footer .copyright a {
-  color: var(--primary);
+.headingContact {
+  font-size: 2rem;
+  color: #E22E38;
 }
 
-.footer .copyright a:hover {
-  color: #ffffff;
+.icons {
+  color: #E22E38;
+  margin: 0.5rem;
+  font-size: 2rem;
+  transition: color 0.3s;
 }
 
+.icons:hover {
+  color: #333;
+}
+
+.details {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.details a {
+  text-decoration: none;
+  color: #E22E38;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.details a:hover {
+  color: #333;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.countdown div {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
 /*** Managers ***/
 .team-item img {
   position: relative;
