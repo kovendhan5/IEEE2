@@ -40,6 +40,57 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .top {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .logo-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 1rem;
+      }
+
+      .name {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+
+      .name .logo-left {
+          margin-right: 1rem;
+      }
+
+      .looping-logos {
+          overflow: hidden;
+          white-space: nowrap;
+      }
+
+      .logo {
+          max-width: 200px;
+          max-height: 200px;
+          object-fit: contain;
+          margin: 40px;
+      }
+
+      @keyframes loop {
+          0% {
+              transform: translateX(90%);
+          }
+          100% {
+              transform: translateX(-90%);
+          }
+      }
+
+      .logo-track {
+          display: inline-flex;
+          animation: loop 15s linear infinite;
+      }
+
+  </style>
   </head>
 
   <body>
@@ -83,7 +134,7 @@
             <a href="#goals" class="nav-item nav-link">Goals</a>
             <a href="#schedule" class="nav-item nav-link">Events</a>
             <a href="#sponsors" class="nav-item nav-link">Collaborators</a>
-            <a href="#contact" class="nav-item nav-link">Contact</a>
+            <a href="#Contact5" class="nav-item nav-link">Contact</a>
           </div>
           <!-- <a href="" class="btn gradient-background text-white py-2 px-2"
             >Register now!</a
@@ -573,6 +624,7 @@
     <!-- PRIZES Start -->
     
       <!--  PRIZES End -->
+     
 
 
 
@@ -593,9 +645,24 @@
           </p>
           <h2 class="display-5 mb-5">Our Sponsors</h2>
         </div>
+        <section id="looping-logos">
+          <div class="looping-logos">
+              <div class="logo-track">
+                  <img src="img/logo/JIT LOGO - Aqua.png" alt="JIT LOGO" class="logo">
+                  <img src="img/logo/ieee mb black png.png" alt="IEEE" class="logo">
+                  <img src="img/logo/jit sb logo c.png" alt="SB LOGO" class="logo">
+                  <img src="img/logo/IEEE-CS_LogoTM-orange-300x103.webp" alt="" class="logo">
+                  <img src="img/logo/techX r.png" alt="TECHX" class="logo">
+                  <img src="img/logo/ieee_cs_syp_logo.png" alt="IEEE CS" class="logo">
+                  <img src="img/logo/madras section logo.png" alt="MS LOGO" class="logo">
+                  <img src="img/logo/myp logo.png" alt="MYP LOGO" class="logo">
+                  <img src="img/logo/innovation council.png" alt="IC" class="logo">
+              </div>
+          </div>
+      </section>
        
          
-          <!-- --- -->
+          <!-- --- 
           <div
             class="card-team rounded border border-1 fadeInUp"
             data-wow-delay="0.1s"
@@ -604,26 +671,26 @@
               <div class="overflow-hidden spon-img">
                 <img
                   class="img-fluid"
-                  src="img/Collaborators/ieee-section-02.png"
-                  alt=""
+                  src="img\logo\JIT LOGO - Aqua.png"
+                  alt="no image"
                 />
               </div>
             </div>
           </div>
-          <!-- --- -->
-          <!-- --- -->
+          <!-- 
+          <!-- 
           <div
             class="card-team rounded border border-1 fadeInUp"
             data-wow-delay="0.1s"
           >
             <div class="team-item position-relative rounded overflow-hidden">
               <div class="overflow-hidden spon-img">
-                <img class="img-fluid" src="img/logo/sb.png" alt="" />
+                <img class="img-fluid" src="img/logo/sb.png" alt="new image" />
               </div>
             </div>
           </div>
-          <!-- --- -->
-          <!-- --- -->
+          <!-- --- -
+          <!-- --- -
           <div
             class="card-team rounded border border-1 fadeInUp"
             data-wow-delay="0.1s"
@@ -633,13 +700,13 @@
                 <img
                   class="img-fluid me-3"
                   src="img/Collaborators/SYP-2.jpg"
-                  alt=""
+                  alt="image"
                 />
               </div>
             </div>
           </div>
           <!-- --- -->
-          <!-- --- -->
+          <!-- --- 
           <div
             class="card-team rounded border border-1 fadeInUp"
             data-wow-delay="0.1s"
@@ -649,12 +716,12 @@
                 <img
                   class="img-fluid p-5"
                   src="img/Collaborators/sac-tunisie.png"
-                  alt=""
+                  alt="images"
                 />
               </div>
             </div>
           </div>
-          <!-- --- -->
+           --- -->
         </div>
       </div>
     </div>
@@ -713,11 +780,11 @@
       </div>
   </section>
 
-  <section id="Contact">
+  <section id="Contact5">
       
       
       
-  </section>
+
     <!-- Footer End -->
 
 
@@ -752,6 +819,7 @@
         </div>
       </div>
     </div>
+  </section>
     <!-- Footer End -->
 
 
