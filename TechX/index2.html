@@ -1,175 +1,736 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles1.css">
-</head>
-<body>
-    <section id="schedule" class="section-with-bg mt-4">
-        <div class="container" data-aos="fade-up">
-          <div
-            class="text-center mx-auto wow fadeInUp"
-            data-wow-delay="0.1s"
-            style="max-width: 600px"
-          >
-            <p
-              class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
-            >
-              PROGRAM
-            </p>
-            <h2 class="display-5 mb-5">TechX Planning</h2>
+  <head>
+    <meta charset="utf-8" />
+    <title>TechX JIT MADRAS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="TechX Tunisia Section, ieee enis, Computer Society, CS ENIS SBC, TechX CS, TechX ENIS, TechX, IEEE CS event, UI/UX hackathon"
+      name="keywords"
+    />
+    <meta
+      content="TechX: IEEE CS event showcasing new tech with demos, talks, and expert interactions. Emphasizes leadership and interview prep for students and young pros."
+      name="description"
+    />
+
+    <!-- Favicon -->
+    <link href="img/Favicon.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/5aec6573df.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Libraries Stylesheet    -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top bg-white shadow px-0">
+      <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img
+            class="img-fluid me-3"
+            src="img/logo/techx.png"
+            alt="logo"
+            width="280"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="#header" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            
+            <a href="#goals" class="nav-item nav-link">Goals</a>
+            <a href="#schedule" class="nav-item nav-link">Events</a>
+            <a href="#sponsors" class="nav-item nav-link">Collaborators</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
-          <ul
-            class="nav nav-tabs"
-            role="tablist"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="#day-1"
-                role="tab"
-                data-bs-toggle="tab"
-                >Day 1</a
+          <!-- <a href="" class="btn gradient-background text-white py-2 px-2"
+            >Register now!</a
+          > -->
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-4 mt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container d-flex justify-content-center mt-5">
+        <div class="mt-5">
+          <!-- Coming Soon Section Start -->
+          <header id="header" class="d-flex align-items-center">
+            <div class="text-center justify-content-center">
+              <div
+                class="wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 300px; margin: 0 auto"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab"
-                >Day 2</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab"
-                >Day 3</a
-              >
-            </li>
-          </ul>
-          <div
-            class="tab-content row justify-content-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <!-- Schdule Day 1 -->
-            <div
-              role="tabpanel"
-              class="col-lg-9 tab-pane fade show active"
-              id="day-1"
-            >
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>12:30 - 13:00</time></div>
-                <div class="col-md-10">
-                  <h4>Checkin</h4>
+                <div class="rounded-pill text-primary pt-3">
+                  <h4 class="mb-2 animated slideInDown">EVENT STARTS IN</h4>
                 </div>
               </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>13:00 - 15:00</time></div>
-                <div class="col-md-10">
-                  <h4>UI/UX workshop</h4>
+              <div class="countdown d-flex justify-content-center">
+                <div class="bg-light">
+                  <h3><span>0</span></h3>
+                  <h4>Days</h4>
+                </div>
+                <div class="bg-light">
+                  <h3><span>0</span></h3>
+                  <h4>Hours</h4>
+                </div>
+                <div class="bg-light">
+                  <h3><span>0</span></h3>
+                  <h4>Minutes</h4>
+                </div>
+                <div class="bg-light">
+                  <h3><span>0</span></h3>
+                  <h4>Seconds</h4>
                 </div>
               </div>
             </div>
-            <!-- End Schdule Day 1 -->
-            <!-- Schdule Day 2 -->
-            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>13:00 - 14:00</time></div>
-                <div class="col-md-10">
-                  <h4>Checkin</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>14:00 - 16:60</time></div>
-                <div class="col-md-10">
-                  <h4>Opening Ceremony</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>16:00 - 17:30</time></div>
-                <div class="col-md-10">
-                  <h4>Blockchain Workshop</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>17:30 - 18:00</time></div>
-                <div class="col-md-10">
-                  <h4>Coffee break</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>18:00 - 19:30</time></div>
-                <div class="col-md-10">
-                  <h4>Workshop Transition from academia to professional life</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>19:30 - 21:00</time></div>
-                <div class="col-md-10">
-                  <h4>Dinner and fun</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>21:00 - 09:00</time></div>
-                <div class="col-md-10">
-                  <h4>
-                    HACKATHON UI/UX (breakfast served within the hackathon 07:00)
-                  </h4>
-                </div>
-              </div>
+          </header>
+          <!-- Coming Soon Section End -->
+          <div class="container mt-1 image-animation text-center">
+            <h4 class="mb-1 animated slideInDown">IEEE JIT SB</h4>
+            <h4 class="animated slideInDown">presents</h4>
+            <div mb-4>
+              <img
+                class="img-fluid me-3 animated slideInDown scaling-image"
+                src="img/logo/techx.png"
+                alt="logo"
+                width="500"
+              />
             </div>
-            <!-- End Schdule Day 2 -->
-            <!-- Schdule Day 3 -->
-            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>21:00 - 09:00</time></div>
-                <div class="col-md-10">
-                  <h4>
-                    HACKATHON UI/UX (breakfast served within the hackathon 07:00)
-                  </h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>09:00 - 11:00</time></div>
-                <div class="col-md-10">
-                  <h4>Prepare for interview workshop</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>11:00 - 12:00</time></div>
-                <div class="col-md-10">
-                  <h4>Pitching Preparations</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>12:00 - 13:00</time></div>
-                <div class="col-md-10">
-                  <h4>Lunch</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>13:00 - 17:00</time></div>
-                <div class="col-md-10">
-                  <h4>Pitching</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>17:00 - 17:30</time></div>
-                <div class="col-md-10">
-                  <h4>Winner Announcement</h4>
-                </div>
-              </div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>17:30 - 18:00</time></div>
-                <div class="col-md-10">
-                  <h4>Closing Ceremony</h4>
-                </div>
-              </div>
-            </div>
-            <!-- End Schdule Day 3 -->
           </div>
         </div>
-      </section>
-</body>
+      </div>
+    </div>
+
+    <!-- ============= About Start =============== -->
+    <!-- <section id="about" class="about mt-5">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div
+            class="about-container d-flex flex-column justify-content-center p-4 gradient-background"
+          >
+            <div class="wow fadeIn" data-wow-delay="0.1s">
+              <p
+                class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3 text-white"
+              >
+                ABOUT US
+              </p>
+              <h1 class="mb-4 text-white">What is TechX?</h1>
+              <p class="mb-4 text-white">
+                TechX is an IEEE CS event designed for students and young
+                professionals. It focuses on new technologies and offers various
+                sessions, including technical demonstrations, talks on emerging
+                technologies, and interactions with industry experts. TechX also
+                emphasizes leadership development and soft skills, providing
+                sessions to help students become effective leaders and prepare
+                for interviews.
+              </p>
+              <h5 class="text-white">
+                <i class="bi bi-signpost-fill me-2"></i>ENIS, 4C Center
+              </h5>
+              <h5 class="text-white mb-4">
+                <i class="bi bi-calendar-check-fill me-2"></i>6th, 9th, and 10th
+                of December 2023
+              </h5>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    Definition Model Start -->
+
+    <!-- ============= About End =============== -->
+
+    <!-- Goals Start -->
+    <div class="container-xxl py-5" id="goals">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <p
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+            MAIN GOALS
+          </p>
+          <h2 class="display-5 mb-5">Our Objectives</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+              <div class="feature-box border rounded p-4">
+                <i class="fa fa-address-card fa-3x text-primary mb-3"></i>
+                <h4 class="mb-3">Expert-Led Sessions</h4>
+                <p class="mb-3">
+                  Gain knowledge from industry leaders on emerging trends and best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="feature-box border rounded p-4">
+              <i class="fa fa-users fa-3x text-primary mb-3"></i>
+              <h4 class="mb-3">Technology Demos</h4>
+              <p class="mb-3">
+                Experience the latest technological advancements through live demonstrations.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="feature-box border rounded p-4">
+              <i class="fa fa-laptop-code fa-3x text-primary mb-3"></i>
+              <h4 class="mb-3">Collaborative Projects</h4>
+              <p class="mb-3">
+                Work with peers on interdisciplinary projects that push the boundaries of innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+              <div class="feature-box border rounded p-4">
+                <i class="fa fa-trophy fa-3x text-primary mb-3"></i>
+                <h4 class="mb-3">Creative Problem Solving</h4>
+                <p class="mb-3">
+                  Engage in problem-solving activities that challenge your creativity and critical thinking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="feature-box border rounded p-4">
+              <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+              <h4 class="mb-3">Innovative Idea Pitches</h4>
+              <p class="mb-3">
+                Present your innovative ideas in pitch sessions to industry experts and investors.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="feature-box border rounded p-4">
+              <i class="fa fa-comments fa-3x text-primary mb-3"></i>
+              <h4 class="mb-3">Career Path Guidance</h4>
+              <p class="mb-3">
+                Receive tailored advice on navigating your career path from seasoned professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Goals End -->
+
+
+  
+
+    <!-- Competition details Start -->
+    <section id="about-2" class="about mt-5">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div
+            class="about-container d-flex flex-column justify-content-center p-4 gradient-background"
+          >
+            <div class="wow fadeIn" data-wow-delay="0.1s">
+                  <!-- =================== Program Start ==================== -->
+    <section id="schedule" class="section-with-bg mt-4">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <h2
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+          TechX Events
+          </h2>
+          <!-- <h2 class="display-5 mb-5">TechX Events</h2> -->
+        </div>
+        <ul
+          class="nav nav-tabs"
+          role="tablist"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="#day-1"
+              role="tab"
+              data-bs-toggle="tab"
+              >Day 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab"
+              >Day 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab"
+              >Day 3</a
+            >
+          </li>
+        </ul>
+        <div
+          class="tab-content row justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <!-- Schdule Day 1 -->
+          <div
+            role="tabpanel"
+            class="col-lg-9 tab-pane fade show active"
+            id="day-1"
+          >
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>12:30 - 13:00</time></div>
+              <div class="col-md-10">
+                <h4>Checkin</h4>
+              </div>
+            </div> -->
+            <div class="row schedule-item">
+              <div class="col-md-2"><time></time></div>
+              <div class="col-md-10" style="text-align: center;">
+                <h3>Workshop on data visualization using PowerBI</h3>
+              </div>
+            </div>
+            <p class="mb-4 text-white">
+              TechX is hosting a Workshop where creativity meets
+              technology. Join us to enhance your design thinking and
+              innovation skills through collaboration. The event features a
+              pitching workshop to help you master the art of presenting ideas
+              effectively. Get expert feedback to elevate your pitch, connect
+              with industry professionals, and explore the world of web and UX
+              design. Don't miss the chance to be a catalyst for change!
+            </p>
+            <div class="row g-4 pt-3">
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-users fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      3
+                    </h2>
+                    <p class="mb-0 text-white">Person/team</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-clock fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      12
+                    </h2>
+                    <p class="mb-0 text-white">Hours</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-star fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      2
+                    </h2>
+                    <p class="mb-0 text-white">Winners</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 1 -->
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <!-- <div class="col-md-2"><time>21:00 - 09:00</time></div> -->
+              <div class="col-md-10" style="text-align: center;">
+                <h3> Hackathon </h3>
+              </div>
+            </div>
+            <p class="mb-4 text-white">
+              TechX is hosting a Web and UX Hackathon where creativity meets
+              technology. Join us to enhance your design thinking and
+              innovation skills through collaboration. The event features a
+              pitching workshop to help you master the art of presenting ideas
+              effectively. Get expert feedback to elevate your pitch, connect
+              with industry professionals, and explore the world of web and UX
+              design. Don't miss the chance to be a catalyst for change!
+            </p>
+            <div class="row g-4 pt-3">
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-users fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      3
+                    </h2>
+                    <p class="mb-0 text-white">Person/team</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-clock fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      12
+                    </h2>
+                    <p class="mb-0 text-white">Hours</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div class="feature-box d-flex border rounded p-4">
+                  <i class="fa fa-star fa-3x text-white"></i>
+                  <div class="ms-3">
+                    <h2 class="mb-0 text-white" data-toggle="counter-up">
+                      2
+                    </h2>
+                    <p class="mb-0 text-white">Winners</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 2 -->
+          <!-- Schdule Day 3 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3">
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>21:00 - 09:00</time></div>
+              <div class="col-md-10">
+                <h4>
+                  HACKATHON UI/UX (breakfast served within the hackathon 07:00)
+                </h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:00 - 11:00</time></div>
+              <div class="col-md-10">
+                <h4>Prepare for interview workshop</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 - 12:00</time></div>
+              <div class="col-md-10">
+                <h4>Pitching Preparations</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 - 13:00</time></div>
+              <div class="col-md-10">
+                <h4>Lunch</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>13:00 - 17:00</time></div>
+              <div class="col-md-10">
+                <h4>Pitching</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>17:00 - 17:30</time></div>
+              <div class="col-md-10">
+                <h4>Winner Announcement</h4>
+              </div>
+            </div> -->
+            <div class="row schedule-item">
+              <!-- <div class="col-md-2"><time>17:30 - 18:00</time></div> -->
+              <div class="col-md-10" style="text-align: center;">
+                <h3> Seminar on Leadership Development</h3>
+              </div>
+            </div>
+            <p class="mb-4 text-white">
+              TechX is hosting a Web and UX Hackathon where creativity meets
+              technology. Join us to enhance your design thinking and
+              innovation skills through collaboration. The event features a
+              pitching workshop to help you master the art of presenting ideas
+              effectively. Get expert feedback to elevate your pitch, connect
+              with industry professionals, and explore the world of web and UX
+              design. Don't miss the chance to be a catalyst for change!
+            </p>
+          </div>
+          <!-- End Schdule Day 3 -->
+        </div>
+      </div>
+    </section>
+
+            </div>
+          </div>          
+          </div>
+          <br>
+          
+            <div  style="border: solid; border-radius: 15px; border-color: #667eea;">
+            
+                      <h2 style="text-align: center;">Last Date For Registration</h2>
+                      <h2 style="text-align: center;">06/09/2024</h2>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Competition details End -->
+
+    <!-- PRIZES Start -->
+    
+      <!--  PRIZES End -->
+
+
+
+    <!-- =================== WIE ACT Program End ==================== -->
+
+    <!-- =================== Sponsors Start =================== -->
+    <div class="container-xxl pt-5 mt-2" id="sponsors">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <p
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+            OUR COLLABORATORS
+          </p>
+          <h2 class="display-5 mb-5">Our Sponsors</h2>
+        </div>
+       
+         
+          <!-- --- -->
+          <div
+            class="card-team rounded border border-1 fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden spon-img">
+                <img
+                  class="img-fluid"
+                  src="img/Collaborators/ieee-section-02.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
+          <!-- --- -->
+          <div
+            class="card-team rounded border border-1 fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden spon-img">
+                <img class="img-fluid" src="img/logo/sb.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
+          <!-- --- -->
+          <div
+            class="card-team rounded border border-1 fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden spon-img">
+                <img
+                  class="img-fluid me-3"
+                  src="img/Collaborators/SYP-2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
+          <!-- --- -->
+          <div
+            class="card-team rounded border border-1 fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="team-item position-relative rounded overflow-hidden">
+              <div class="overflow-hidden spon-img">
+                <img
+                  class="img-fluid p-5"
+                  src="img/Collaborators/sac-tunisie.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- --- -->
+        </div>
+      </div>
+    </div>
+    <!-- =================== Managers End =================== -->
+
+    <!-- Footer Start -->
+    <section id="co-ordinators">
+      <h2 class="h2-c">PATRONS</h2>
+      <div class="container5">
+          <div class="co-ordinator">
+              <h4 class="h4-c">Chief Patron</h4>
+              <h3 class="h3-c">Dr. N. Marie Wilson</h3>
+              <p>B.Tech., M.B.A., Ph.D</p>
+              <p>Managing Director</p>
+          </div>
+          <div class="co-ordinator">
+              <h4 class="h4-c">Patron</h4>
+              <h3 class="h3-c">Dr. G. R. Suresh</h3>
+              <p>M.E., Ph.D</p>
+              <p>Principal</p>
+          </div>
+      </div>
+      <br>
+      <h2 class="h2-c">ORGANISERS</h2>
+      <div class="container6">
+          <div class="co-ordinator">
+              <h3 class="h3-c">Mrs.Benisha</h3>
+              <p>Staff Co-ordinator</p><br><br>
+              <a href="tel:+919003191790" class="register spaceAround"><span>Call Now</span></a>
+          </div>
+          <div class="co-ordinator">
+              <h3 class="h3-c">Mrs.Yuvabharathi</h3>
+              <p>Staff Co-ordinator</p><br><br>
+              <a href="tel:+916383155415" class="register spaceAround"><span>Call Now</span></a>
+          </div>
+          <div class="co-ordinator">
+              <h3 class="h3-c">Karthik P</h3>
+              <p>Organizer</p><br><br>
+              <a href="tel:+919789320853" class="register spaceAround"><span>Call Now</span></a>
+          </div>
+      </div><br>
+      <h2 class="h2-c">CO-ORDINATORS</h2>
+      <div class="container7">
+          <div class="co-ordinator">
+              <h3 class="h3-c">Bejisto Joseph B</h3>
+              <p>Student Co-ordinator</p><br>
+              <a href="tel:+919500983398" class="register spaceAround"><span>CALL NOW</span></a>
+              <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
+          </div>
+          <div class="co-ordinator">
+              <h3 class="h3-c">Vanabagavath Pandiyan</h3>
+              <p>Student Co-ordinator</p>
+              <a href="tel:+916374824641" class="register spaceAround"><span>CALL NOW</span></a>
+              <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
+          </div>
+      </div>
+  </section>
+
+  <section id="Contact">
+      <h2 class="headingContact" id="contact">CONTACT</h2>
+      <div>
+          <a href="https://www.instagram.com/jit_ieee_sb?igsh=MWRyNXl2M29ma3dqbQ=="><i class="icons fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jit-ieee-student-branch-01b6111b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="icons fa-brands fa-linkedin"></i></a>
+          <a href="mailto:karthikpalanipk@gmail.com"><i class="icons fa-regular fa-envelope"></i></a>
+      </div>
+      <h3>DETAILS</h3>
+      <div class="details">
+          <p>September 10th - 12th</p>
+          <p>Starts at 9:00 A.M</p>
+          <a href="https://www.google.com/maps/place/Jeppiaar+Institute+Of+Technology/@12.889614,79.8745376,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52edd2f17dca51:0x1825c97e3f212814!8m2!3d12.889614!4d79.8745376!16s%2Fm%2F0zwk2sg">Location <span class="material-symbols-outlined"></span></a>
+          <p>Jeppiaar Institute of Technology - Campus</p>
+          <p>Kunnam, Sriperumbudur</p>
+          <p>Chennai - 631604</p>
+      </div>
+  </section>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up text-white"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
