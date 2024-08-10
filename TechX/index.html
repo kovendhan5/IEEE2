@@ -4,49 +4,27 @@
   <head>
     <meta charset="utf-8" />
     <title>TechX JIT MADRAS</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="TechX, IEEE CS event, technology, innovation, students" />
     <meta name="description" content="TechX: IEEE CS event showcasing new tech with demos, talks, and expert interactions." />
-
-
-    <!-- Favicon -->
     <link href="img/Favicon.png" rel="icon" />
-
-
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet" />
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-
-
-    <script src="https://kit.fontawesome.com/5aec6573df.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <!-- Libraries Stylesheet    -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
-    <link
-      href="../lib/owlcarousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="flipdown.css" rel="stylesheet" />
     <style>
-      .top {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-
+        /* Consolidate styles here */
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Other CSS styles */
+    
       .logo-container {
           display: flex;
           justify-content: center;
@@ -454,23 +432,12 @@
     }
 }
 
-  </style>
-  </head>
-
-  <body>
-    
-    <!-- Spinner Start 
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        role="status"
-        style="width: 3rem; height: 3rem"
-      ></div>
-    </div>
-    Spinner End -->
+</style>
+    <script type="text/javascript" src="flipdown.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+ 
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top bg-white shadow px-0">
@@ -515,44 +482,36 @@
         <div class="mt-5">
           <!-- Coming Soon Section Start -->
           <header id="header" class="d-flex align-items-center">
+            <div class="col-lg-1 col-md-2"></div>
+            <div class="col-lg-1 col-md-2"></div>
             <div class="text-center justify-content-center">
               <div
                 class="wow fadeInUp"
                 data-wow-delay="0.1s"
-                style="max-width: 300px; margin: 0 auto"
+                style="max-width: 300px; margin: 0 auto; display: flex; justify-content: center; "
               >
                 <div class="rounded-pill text-primary pt-3">
                   <h4 class="mb-2 animated slideInDown">EVENT STARTS IN</h4>
                 </div>
               </div>
-              <div class="countdown d-flex justify-content-center">
-                <div class="bg-light">
-                  <h3><span>0</span></h3>
-                  <h4>Days</h4>
-                </div>
-                <div class="bg-light">
-                  <h3><span>0</span></h3>
-                  <h4>Hours</h4>
-                </div>
-                <div class="bg-light">
-                  <h3><span>0</span></h3>
-                  <h4>Minutes</h4>
-                </div>
-                <div class="bg-light">
-                  <h3><span>0</span></h3>
-                  <h4>Seconds</h4>
-                </div>
+    
+              <div class="example">
+
+                <div id="flipdown" class="flipdown"></div>
+             
               </div>
             </div>
           </header>
           <!-- Coming Soon Section End -->
+           
+           <section>
           <div class="container mt-1 image-animation text-center">
-              <img src="img/logo/jit sb logo c.png" alt="SB LOGO" class="img-fluid me-1 animated slideInDown scaling-image" widht="5%">
+              <img src="img/logo/jit sb logo c.png" alt="SB LOGO" class="logo" widht="200">
               <img
               class="img-fluid me-3 animated slideInDown scaling-image"
               src="img/logo/techx.png"
               alt="logo"
-              width="400"
+              width="200"
             />
           </div><br>
            
@@ -565,7 +524,7 @@
               width="800"
             />
            
-            </div>
+            </div></section>
           </div>
         </div>
       </div>
@@ -1266,5 +1225,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+   
   </body>
 </html>
