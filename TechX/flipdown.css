@@ -13,24 +13,24 @@
   /* Delimeters */
   .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before,
   .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-    background-color: #151515;
+    background-color: #DFE4FD;
   }
   /* Rotor tops */
   .flipdown.flipdown__theme-dark .rotor,
   .flipdown.flipdown__theme-dark .rotor-top,
   .flipdown.flipdown__theme-dark .rotor-leaf-front {
-    color: #FFFFFF;
-    background-color: #151515;
+    color: #712a95;;
+    background-color: #DFE4FD;
   }
   /* Rotor bottoms */
   .flipdown.flipdown__theme-dark .rotor-bottom,
   .flipdown.flipdown__theme-dark .rotor-leaf-rear {
-    color: #EFEFEF;
-    background-color: #202020;
+    color: #712a95;
+    background-color:#DFE4FD;
   }
   /* Hinge */
   .flipdown.flipdown__theme-dark .rotor:after {
-    border-top: solid 1px #151515;
+    border-top: solid 1px #DFE4FD;
   }
   
   /********** Theme: light **********/
@@ -63,7 +63,7 @@
   }
   /* Hinge */
   .flipdown.flipdown__theme-light .rotor:after {
-    border-top: solid 1px #222222;
+    border-top: solid 1px #5fe0f7;
   } */
   
   /* END OF THEMES */
