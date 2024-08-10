@@ -13,11 +13,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 9999; /* Ensure it's above other content */
+            transition: opacity 0.5s ease-out;
+            background-color: cyan;
         }
         
         /* Hide the content until fully loaded */
         #content {
             display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
         }
     </style>
 </head>
@@ -26,9 +30,9 @@
     <!-- Ripple Effect Loading Indicator -->
     <div id="loading">
         <l-ripples
-            size="45"
+            size="50"
             speed="2"
-            color="black"
+            color="blue"
         ></l-ripples>
     </div>
 
@@ -40,12 +44,23 @@
     </div>
 
     <script>
-        // Wait until the page is fully loaded
+        // To ensure the animation starts, use requestAnimationFrame
+        function startLoadingAnimation() {
+            document.getElementById('loading').style.opacity = 1;
+        }
+
+        // Ensure the animation starts right after the DOM is ready
+        window.addEventListener('DOMContentLoaded', function() {
+            requestAnimationFrame(startLoadingAnimation);
+        });
+
+        // Hide the loading indicator and show the content after everything is loaded
         window.addEventListener('load', function() {
-            // Hide the loading indicator
-            document.getElementById('loading').style.display = 'none';
-            // Show the content
+            document.getElementById('loading').style.opacity = 0;
             document.getElementById('content').style.display = 'block';
+            requestAnimationFrame(() => {
+                document.getElementById('content').style.opacity = 1;
+            });
         });
     </script>
 </body>

@@ -822,7 +822,7 @@ h6,
 .btn-53 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000;
+  background-color: #bddddf;
   background-image: none;
   color: #fff;
   cursor: pointer;
@@ -832,7 +832,7 @@ h6,
   font-size: 100%;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  -webkit-mask-image: -webkit-radial-gradient(#cae9e9, #fff);
   padding: 0;
 }
 
@@ -867,7 +867,7 @@ h6,
 
 .btn-53 .original {
   background: #fff;
-  color: #000;
+  color: black;
   display: grid;
   inset: 0;
   place-content: center;
