@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Loading Indicator</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ripples.js"></script>
+    <style>
+        /* Center the ripple loader in the viewport */
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999; /* Ensure it's above other content */
+        }
+        
+        /* Hide the content until fully loaded */
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ripple Effect Loading Indicator -->
+    <div id="loading">
+        <l-ripples
+            size="45"
+            speed="2"
+            color="black"
+        ></l-ripples>
+    </div>
+
+    <!-- Website Content -->
+    <div id="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the content of the website.</p>
+        <!-- Add more content here -->
+    </div>
+
+    <script>
+        // Wait until the page is fully loaded
+        window.addEventListener('load', function() {
+            // Hide the loading indicator
+            document.getElementById('loading').style.display = 'none';
+            // Show the content
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
