@@ -1,8 +1,10 @@
 <h1 align="center">Hi 👋, I'm Kovendhan</h1>
-<h3 align="center">🌟 Passionate about Front-End Development and Cloud Computing 🌟<br> Hi there! I'm Kovendhan P, a dedicated learner with a passion for mastering the realms of Front-End Development and Cloud Computing. Currently pursuing my B.Tech, I'm driven by a relentless curiosity to explore the latest trends and technologies shaping the digital landscape.</h3>
+<h3 align="center">🌟 Passionate about Cloud Computing, DevOps, and Cyber Security 🌟</h3><h4 align="center">
+Hi there! I'm Kovendhan P, a dedicated learner with a strong focus on mastering Cloud Computing and DevOps, followed by Cyber Security, and then Full Stack Development. Currently pursuing my B.Tech, I'm driven by a relentless curiosity to explore the latest trends and technologies shaping the digital landscape.</h4>
 
+- ⚒️ I'm currently working on [Ai Assistant](https://github.com/kovendhan5/Ai-Assistant)
 
-- 🔭 I’m currently working on [pixelated image correction](https://github.com/kovendhan5/intel-project)
+- 🔭 I’m have worked on [pixelated image correction](https://github.com/kovendhan5/intel-project) and i got certified by Intel.
 
 - 🌱 I’m currently learning **AWS, AZURE,GCP**
 
@@ -37,4 +39,5 @@
 
 <!---
 kovendhan5/kovendhan5 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes. -->
+You can click the Preview link to take a look at your changes.
+--->
